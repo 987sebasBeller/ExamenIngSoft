@@ -20,4 +20,8 @@ describe("Contador", () => {
         let contador= new Contador("a.b.c")
       expect(contador.obtenerLista()).toEqual(["a","b","c"]);
     });
+    it("Obtener conteo de palabras separadas por .", () => {
+        let contador= new Contador("a.b.c.c")
+      expect(contador.obtenerRepeticiones()).toEqual({"a": 1, "b": 1, "c": 2});
+    });
   });
