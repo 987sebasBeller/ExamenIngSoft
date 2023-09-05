@@ -12,4 +12,8 @@ describe("Contador", () => {
         let contador= new Contador("a,b,c")
       expect(contador.obtenerLista()).toEqual(["a","b","c"]);
     });
+    it("Obtener lista de palabras separadas por ;", () => {
+        let contador= new Contador("a;b;c")
+      expect(contador.obtenerLista()).toEqual(["a","b","c"]);
+    });
   });
