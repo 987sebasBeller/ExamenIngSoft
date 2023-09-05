@@ -9,7 +9,7 @@ class Contador{
             if(!["-"," ",",",";","."].includes(cadena[i])){
                 aux+=cadena[i];
             }else{
-                this.lista.push(aux);
+                this.lista.push(aux.toLowerCase());
                  aux="";
             
             }
