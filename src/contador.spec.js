@@ -1,5 +1,7 @@
-describe("Sumar", () => {
-    it("deberia sumar dos numeros", () => {
-      expect(sumar(3, 2)).toEqual(5);
+import Contador from "./contador";
+describe("Contador", () => {
+    it("Obtener lista de palabras separadas por espacio", () => {
+        let contador= new Contador("a b c")
+      expect(contador.obtenerLista()).toEqual(["a","b","c"]);
     });
   });
